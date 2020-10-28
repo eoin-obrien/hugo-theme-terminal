@@ -1,0 +1,25 @@
+* {
+  /* Custom scrollbar (Firefox) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-color) var(--background);
+
+  /* Custom scrollbar (Chrome/Edge/Safari) */
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+
+    &-track {
+      background: var(--background);
+    }
+  
+    &-thumb {
+      background-color: var(--scrollbar-color);
+      border-radius: 6px;
+      border: 2px solid var(--background);
+    
+      &:hover {
+        background-color: var(--scrollbar-hover-color);
+      }
+    }
+  }
+}
