@@ -7,7 +7,10 @@
       {{ if $.Site.Copyright }}
         <span>{{ $.Site.Copyright | safeHTML }}</span>
       {{ else }}
-        <span><i class="far fa-copyright"></i> {{ now.Year }} {{ $.Site.Params.Owner }}</span>
+        <span>
+          <i class="far fa-copyright"></i>
+          &nbsp;{{ now.Year }} {{ $.Site.Params.Owner }}
+        </span>
       {{ end }}
       <span>:: Powered by <a href="http://gohugo.io">Hugo</a></span>
     </div>
