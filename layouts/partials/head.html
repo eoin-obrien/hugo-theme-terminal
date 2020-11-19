@@ -28,6 +28,11 @@
   <link rel="shortcut icon" href="{{ printf "img/favicon/%s.png" ($.Site.Params.ThemeColor | default "orange") | absURL }}">
 {{ end }}
 
+<!-- Preconnect -->
+<link rel="preconnect" href="https://ka-f.fontawesome.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
 {{ if (isset $.Site.Params "twitter") }}
